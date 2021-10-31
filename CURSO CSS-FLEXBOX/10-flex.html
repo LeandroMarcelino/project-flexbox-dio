@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - flex</title>
     <style>
-        .flex-container{
+        .flex-container {
             display: flex;
             border: 1px solid black;
             max-width: 400px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .item{
+        .item {
             background-color: brown;
             color: white;
             font-size: 24px;
             text-align: center;
             margin: 5PX;
+
         }
 
-        .flex-1{
-            flex: 1; 
-            /* grow = 1, shrink = 1, basis = 0 */
+        .flex-1 {
+            flex: 1;
+            /*grow = 1, shrink = 1, basis = 0 */
         }
-
         .largura{
-            width: 200px;
-            /* min-width: 250px; */
+            width: 250px;
         }
-
-        .flex-2{
-            flex: 2; 
-            /* grow = 2, shrink = 1, basis = 0 */
+        
+        .flex-2 {
+            flex: 2;
+            /*grow = 2, shrink = 1, basis = 0 */
         }
-
     </style>
 </head>
+
 <body>
-    <p>flex: 1</p>
+    <P>flex: 1</P>
     <div class="flex-container">
         <div class="item flex-1">A</div>
         <div class="item flex-1">BBB</div>
@@ -47,7 +48,7 @@
         <div class="item flex-1">EF</div>
     </div>
 
-    <p>flex: mix</p>
+    <P>flex: mix</P>
     <div class="flex-container">
         <div class="item flex-1">A</div>
         <div class="item flex-2">BBB</div>
@@ -56,14 +57,15 @@
         <div class="item flex-1">EF</div>
     </div>
 
-    <p>width ignorado -> basis = 0</p>
-
+    <P>width ignorado -> basis = 0</P>
     <div class="flex-container">
-        <div class="item flex-1 largura">A</div>
+        <div class="item flex-1 largura ">A</div>
         <div class="item flex-1 largura">BBB</div>
         <div class="item flex-1 largura">CC</div>
         <div class="item flex-1 largura">D</div>
         <div class="item flex-1 largura">EF</div>
     </div>
+
 </body>
+
 </html>
